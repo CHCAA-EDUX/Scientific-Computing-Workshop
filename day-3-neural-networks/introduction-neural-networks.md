@@ -1,50 +1,52 @@
 
-# Prerequisites
+## Introduction to Neural Networks
+
+### Prerequisites
+
+The introduction to basic linear algebra (day 2) including
+- matrix multiplication
+- task: minimizing a parabola
+- task: sigmoid
+
+## Plan
+
 ---
 
-The introduction to basic linear algebra including
-> matrix multiplication
-> task: minimizing a parabola
-> task: sigmoid
+### What is a neural network?
 
-Let us first briefly introduce a neural network. Simple case logistic regression.
+This section starts with an explation of the neuron, followed by an abstraction of the concept into notation followed by its vector form.
 
-> draw a neural network
-> show the calculations
-> show that it is equal to matrix multiplication (+ bias)
+### The data
+This section introduces the MNIST data. Then it goes on to introduce what use representation we might expect the neural network to learn, using hubel and weisel experiment as an example. 
 
-So given this you should be able to implement the forward pass. For the weights and biases simply sample them from a normal distribution.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IOHayh06LJ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-> Task 1
+Lastly, the student will implement the feedforward of the neural network and get the first look at the scripts.
 
-This is naturally a stupid network. It can't do anything. We want it to learn. For this we need a cost function. We will simply use the mean squared error:
+### Getting it to learn
+This section will define the cost function. Then it will go on to starting with a naïve approach about how one might train the neural network, before explaining  backpropergation along with stochasting gradient descent.
 
-$$
-cost(x, y) : = \frac{1}{n} \sum_x (y - f(x))^2
-$$
+After a break here we will briefly go through the backpropergation script. Then we talk about stochastic gradient descent (SGD).
 
-Following what we did in the exercise yesterday it is easy to see that we can diffentiate this 
-$$
-cost(x, y) : = \frac{1}{n}  \sum_x (y - f(x))^2
-$$
+### How to tackle the exercise
 
+Introduction and walkthrough of the exercises. We will start of with getting the whole thing up and running before we start experimenting more with it.
 
+After that. First of all a congratulations on implementing a neural network is in order. Then there is the following tasks (feel free to take them in order of interest):
 
-Exercises
-Task 1: Create a class called `Network`. The network should generate weight and biases and have a method `forward()` which takes in a vector of 10 values and perform the forward pass returning a single value.
-
-**Bonus**: Generalize the function to take in `n` input values
-
-**Bonus**: Generalize the function to output in `n` output values
-
-**Bonus**: Generalize the function to have multiple layers as defined by a list e.g. the first network would be `[10, 1]`
-
-Task 2:
+- Generate a sample of random noise.
+  - What does the model predict? Is it sure about its prediction?
+- Improve the performance of the neural network
+   - What changing the number of hidden layers change anything?
+   - What does adjusting the learning rate do? 
+   - What about batch size?
+- plot the loss over epoch both on the test and the train set. When should you stop training?
+- replace the sigmoid function with a relu activation function 
+- Challenging: Visualize the weight matrices (something like a heatmap where positive values are 'warm' and negative values are 'cold')
+  - What does the visualizations reveal?
 
 
-
-# Learning more
+## Learning more
 ---
->  3b1b tutorial
 
-> michael nielsens book
+This is just the start of neural networks. To learn more I recommend [the videos](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi) by 3blue1brown and the [book](http://neuralnetworksanddeeplearning.com/index.html) by Michael Nielsen.

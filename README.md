@@ -10,7 +10,7 @@ This repository has the following directory structure:
 | Column | Description|
 |--------|:-----------|
 `day-1-oob`| All materials from day 1 covering basic Python object and object-oriented programming
-`day-2-numpy`| All materials from day 2 covering Numpy, fundamental linear algebra and matplotlib.
+`day-2-numpy`| All materials from day 2 covering Numpy and fundamental linear algebra and a tiny bit of matplotlib.
 `day-3-neural-networks`| All materials from day 3 covering neural networks.
 
 

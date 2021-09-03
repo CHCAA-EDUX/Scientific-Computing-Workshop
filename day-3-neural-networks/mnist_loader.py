@@ -24,7 +24,7 @@ import os
 import numpy as np
 
 
-def load_data():
+def load_data(path=None):
     """Return the MNIST data as a tuple containing the training data,
     the validation data, and the test data.
     The ``training_data`` is returned as a tuple with two entries.
@@ -43,8 +43,9 @@ def load_data():
     That's done in the wrapper function ``load_data_wrapper()``, see
     below.
     """
-    path = os.path.join(
-        os.path.dirname(os.path.abspath(__file__)), "data", "mnist.pkl.gz")
+    if path is None:
+        path = os.path.join(
+            os.path.dirname(os.path.abspath(__file__)), "data", "mnist.pkl.gz")
     f = gzip.open(path, 'rb')
     training_data, validation_data, test_data = pickle.load(f, encoding="latin1")
     f.close()

@@ -16,6 +16,7 @@ def visualize_MNIST(sample, title=None, cmap="Greys"):
         img = np.array(np.split(sample, 28))
 
     plt.matshow(img, cmap=cmap)
+
     plt.axis("off")
     if title:
         plt.title(title)

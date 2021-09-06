@@ -55,6 +55,6 @@ This is just the start of neural networks. To learn more I recommend [the videos
 ### Next time teaching this section
 - [ ] Add justification on why learning neural networks is relevant
 - [ ] edit code
-  - [ ] fix backprop such that shape of the weight and biases doe not matter (transpose if [784, 30] instead of [30, 784], where 30 is the first hiddden layer)
+  - [ ] fix backprop such that shape of the weight and biases doe not matter (transpose if [784, 30] instead of [30, 784], where 30 is the first hidden layer)
   - [ ] similarly or reshape bias to (30, 1) if it is (30,)
   - [ ] remove dependency on number of layer and simply extrapolate these from number of bias matrices.

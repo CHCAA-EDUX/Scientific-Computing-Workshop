@@ -1,6 +1,8 @@
 """
 Fully connected feedforward neural network
 """
+import sys
+sys.path.append("day-3-neural-networks")
 from typing import List, Tuple
 
 import numpy as np
@@ -92,6 +94,7 @@ class NeuralNetwork:
         """
         # Tranforming input in case of dim (n,), it does not influence (n, 1)
         x = X.reshape((-1, 1))
+
 
         # Note this could be optimized using matrix multiplication
         # -1 since x is the input layer
@@ -264,28 +267,28 @@ if __name__ == "__main__":
     ## init your neural network
     # network = NeuralNetwork(...)
     network = NeuralNetwork([784, 30, 10])
+    print("init works!")
 
     ## test forward pass on one example
-    # pixels = train_data[0][0] # one example
-    # answer = train_data[0][1]
-    # output = network.forward(X=pixels)
-    pixels = train_data[0][0]  # one example
+    pixels = train_data[0][0] # one example
     answer = train_data[0][1]
     output = network.forward(X=pixels)
+    print(output)
+
 
     ## calculate the cost
     # cost = network.cost(output, actual=answer)
-    cost = network.cost(output, actual=answer)
+    # cost = network.cost(output, actual=answer)
 
     ## train using backprop.
     ## (this should be very slow with stachostic gradient descent)
-    # for i in range(10):
-    #     network.backprop(train_data, learning_rate=3)
-    #     print(network.evaluate(val_data))
+    for i in range(10):
+        network.backprop(train_data, learning_rate=3)
+        print(network.evaluate(val_data))
 
     ## train for one epoch
     # network.SGD(train_data=train_data, epochs=1)
-    network.SGD(train_data=train_data, epochs=1)
+    # network.SGD(train_data=train_data, epochs=1)
     
     ## evaluate the performance:
     # print(network.evaluate(val_data))

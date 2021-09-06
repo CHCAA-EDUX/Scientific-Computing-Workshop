@@ -16,6 +16,7 @@ The introduction to basic linear algebra (day 2) including
 
 This section starts with an explation of the neuron, followed by an abstraction of the concept into notation followed by its vector form.
 
+
 ### The data
 This section introduces the MNIST data. Then it goes on to introduce what use representation we might expect the neural network to learn, using hubel and weisel experiment as an example. 
 
@@ -50,3 +51,10 @@ After that. First of all a congratulations on implementing a neural network is i
 ---
 
 This is just the start of neural networks. To learn more I recommend [the videos](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi) by 3blue1brown and the [book](http://neuralnetworksanddeeplearning.com/index.html) by Michael Nielsen.
+
+### Next time teaching this section
+- [ ] Add justification on why learning neural networks is relevant
+- [ ] edit code
+  - [ ] fix backprop such that shape of the weight and biases doe not matter (transpose if [784, 30] instead of [30, 784], where 30 is the first hiddden layer)
+  - [ ] similarly or reshape bias to (30, 1) if it is (30,)
+  - [ ] remove dependency on number of layer and simply extrapolate these from number of bias matrices.

@@ -175,60 +175,11 @@ Remember quotation marks!
     outfile_concise = f"{infile.split('.')[0]}.processed_data.csv"
     outfile == outfile_concise
 
-## Numeric types
-
-There are a few numeric types which are likely to be of use. These are ```int```, ```float```, and ```complex```.
-
-### Int and Floats
-
-The fundamental difference between these two types is that ```int``` does not have a decimal part; ```float``` does have a decimal part which can equal 0.
-
-    # int
-    type(2)
-    # float
-    type(2.0)
-
-Python is clever enough to recognize equivalence, even where types differ: 
-
-    # test equivalence
-    2 == 2.0
-
-We can explicitly convert ```int``` to ```float```:
-
-    # conver int to float
-    print(float(2))
-
-We can also go the other way but be super careful!
-
-    # convert float to int
-    print(int(2.5))
-
-And be aware of other gotchas!
-
-    # division - always float!
-    10/5 == 2
-    # floor division - always integer
-    10//5 == 2
-    # remainder left over from floor division
-    print(f"11/5 = {11//5} remainder {11%5})
-
-
-### Complex
-
-The ```complex``` type may come in handy for advanced mathematical calulations. There are two ways to create objects with ```complex``` type:
-
-    # directly
-    z = 3 + 7j
-    # with a function
-    z = complex(3,7)
-    # test equivalence
-    3 + 7j == complex(3,7)
-
 ## Sequence types
 
 Sequence types are some of the most useful of Python's fundamental data types. If you write a Python program without some kind of sequence type, you're probably doing it wrong.
 
-## Lists
+### Lists
 
 The simplest kind of sequence type is the ```list```. Lists are most commonly used to create a sequential collection of objects of the same type - a ```list``` of ```str``` for example. But in principle, a list can comprise any assortment of objects.
 
@@ -287,6 +238,10 @@ Similarly, be careful with trying to assign lists to new variables:
 
 Lists are incredibly simple but powerful data structures. Use them wisely! 
 
+### Exercise
+
+Find fifth word in a sentence. (Str->List, index list)
+
 ### Tuples
 
 ```Tuples``` are essentially identical to lists but with one important difference, namely that ```tuples``` are immutable. That is to say, they can't be modified when they've been created:
@@ -305,6 +260,10 @@ Be careful if decide to sort a ```tuple```!
     # check type of sorted tuple...
     colours = ("red", "green", "blue")
     print(type(sorted(colours)))
+
+### Exercise
+
+Create a tuple comprising the first, fifth and last word of the text_snippet
 
 ### Ranges
 
@@ -344,7 +303,60 @@ Pretty much anything can be a key except for sequence types. Values can be anyth
     # get adam's age
     print(f"Adam is {new_users["adam"][0]} years old")
 
-# Sets and bools
+    ## Numeric types
+
+There are a few numeric types which are likely to be of use. These are ```int```, ```float```, and ```complex```.
+
+### Exercise
+
+Create a dict with the following key-value pairs - mary=(42,1.65), john=(50,1.8), adam=(32,1.83)
+Print Adam's height
+
+### Int and Floats
+
+The fundamental difference between these two types is that ```int``` does not have a decimal part; ```float``` does have a decimal part which can equal 0.
+
+    # int
+    type(2)
+    # float
+    type(2.0)
+
+Python is clever enough to recognize equivalence, even where types differ: 
+
+    # test equivalence
+    2 == 2.0
+
+We can explicitly convert ```int``` to ```float```:
+
+    # conver int to float
+    print(float(2))
+
+We can also go the other way but be super careful!
+
+    # convert float to int
+    print(int(2.5))
+
+And be aware of other gotchas!
+
+    # division - always float!
+    10/5 == 2
+    # floor division - always integer
+    10//5 == 2
+    # remainder left over from floor division
+    print(f"11/5 = {11//5} remainder {11%5})
+
+### Complex
+
+The ```complex``` type may come in handy for advanced mathematical calulations. There are two ways to create objects with ```complex``` type:
+
+    # directly
+    z = 3 + 7j
+    # with a function
+    z = complex(3,7)
+    # test equivalence
+    3 + 7j == complex(3,7)
+
+### Sets and bools
 
 The ```set``` type is pretty simple. It simply gives us an unordered set of unique entities present in a sequence or map type object. For instance:
 
@@ -365,4 +377,4 @@ The ```set``` type is pretty simple. It simply gives us an unordered set of uniq
 Notice how the returned object from an equivalence test is itself a ```Bool```!
 
     # test for bool
-    print(type(True==1))
+    print(type(True==1)) 

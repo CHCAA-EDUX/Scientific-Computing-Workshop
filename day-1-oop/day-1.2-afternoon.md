@@ -109,6 +109,32 @@ https://docs.python.org/3/tutorial/errors.html
 
 Create a function which does the following:
 
+Task 1
+
+- Take the list of user_data
+- Go through each entry in the list
+  - Add to dictionary
+    - key = name : values = (age, height)
+
+Task 1.1
+
+- Create a function that will do this for any similar list
+
+
+Task 2 
+
+- Take the list of bad_user_data
+- Go through each entry in the list
+  - If first entry is not string:
+    - Raise an error and continue
+  - If first entry is a string
+    - Add to dictionary
+      - key = name : values = (age, height)
+
+Task 2.1
+
+- Create a function that will do this for any similar list
+
 - Go to the folder called "data"
 - For each file in a sorted list
   - check it is a csv

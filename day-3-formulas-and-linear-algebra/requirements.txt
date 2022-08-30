@@ -1,0 +1,2 @@
+# packages used for this class
+numpy==1.23.2

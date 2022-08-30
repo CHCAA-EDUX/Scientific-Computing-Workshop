@@ -9,7 +9,7 @@ This repository has the following directory structure:
 
 | Column | Description|
 |--------|:-----------|
-`day-1-oob`| All materials from day 1 covering basic Python object and object-oriented programming
+`day-1-oop`| All materials from day 1 covering basic Python object and object-oriented programming
 `day-2-scripting`| All materials from day 2 which builds on basic knowledge, introducing good scripting practice. Also features a short introduction to the ```pandas``` dataframe library and ```matplotlib``` for plotting.
 `day-3-numpy`| All materials from day 3 covering how to use ```numpy``` for advanced scientific computing.
 

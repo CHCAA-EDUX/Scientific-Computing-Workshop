@@ -1,5 +1,10 @@
 # Scientific Computing with Python Workshop
-This repository contains all of the code and data related to the Fall 2022 (E22) Python workshop for _Cognitive Science_ at [Aarhus University](https://international.au.dk/), [Faculty of Arts](https://arts.au.dk/en/). The workshop is taught by [Center for Humanities Computing Aarhus](https://chcaa.io/#/), any inquiries can be addressed to [CHCAA](mailto:chcaa@cas.au.dk?subject=[PftHe21]%20Student%20Inquiry). The workshop is a 3-day on scientific computing with Python. It assumes previous experience with programming and going through object-oriented programming, Numpy and fundamental linear algebra and, lastly, implementing a simple neural network.
+This repository contains all of the code and data related to the Fall 2022 (E22) Python workshop for _Cognitive Science_ at [Aarhus University](https://international.au.dk/), [Faculty of Arts](https://arts.au.dk/en/). The workshop is taught by [Center for Humanities Computing Aarhus](https://chcaa.io/#/), any inquiries can be addressed to [CHCAA](mailto:chcaa@cas.au.dk?subject=[PftHe21]%20Student%20Inquiry). 
+
+The workshop consists of a three-day introduction scientific computing with Python. It assumes some previous experience with programming but could in principle be completed with no prior experience. The course introduces Python data types and control flow, focusing on object-oriented programming and good scripting principles. It also introduces students to fundamental data science tools in Python, such as dataframes and plotting. As the workshop is designed with CogSci students in
+mind, there is a particular focus on the use of Python in the mathematical contexts such as linear algebra.
+
+By the end of this workshops, you will be familiar with the key principles and techniques underlying scientific computing with Python.
 
 This repository is in active development. 
 

@@ -4,44 +4,44 @@ We use flow control to do exactly what the name suggests - we want to control th
 Note that if you're coming from an ```R``` background, some of this might seem a little bit unusual. Don't worry, it gets to be second nature!
 
 ## For loops
-
+```python
     colours = ["red", "green", "blue"]
     # for each colour in the list called colours
     for colour in colours:
         print(colour)
-
+```
 ### Increment decrement
-
+```python
     # create variable
     i = 0
     i += 1
     print(i)
-
+```
 ### Comprehensions
 
 In the above example, we are just printing each entry in a list. But let's say we wanted to do something to each of those entries and save the modified values to a new list:
-
+```python
     shouty_colours = []
     for colour in colours:
         upper_string = colour.upper()
         shouty_colours.append(upper_string)
     print(shouty_colours)
-
+```
 This can be made much more concise by using list comprehensions:
-
+```python
     # one liners baby!
     shouty_colours = [colour.upper() for colour in colours]
-
+```
 ### Enumerate()
-
+```python
     for idx,i in enumerate(range(0,10)):
         print(f"Index:{idx}, Value:{i}")
 
     for idx,i in enumerate(range(0,10,2)):
         print(f"Index:{idx}, Value:{i}")
-
+```
 ### while
-
+```python
     i = 10
     while i >= 5:
         print(i)
@@ -50,9 +50,9 @@ This can be made much more concise by using list comprehensions:
         if i < 5:
             print("done!")
             break
-
+```
 ### if, elif, else
-
+```python
     for i in range(0,20):
         if i % 2 == 0:
             print(f"{i} is even")
@@ -66,10 +66,10 @@ This can be made much more concise by using list comprehensions:
             print("ugly colour!")
         else:
             print("whatever")
-
+```
 ## Exception handling
 https://docs.python.org/3/tutorial/errors.html
-
+```python
     for colour in colours:
         try:
             print(colour//2)
@@ -81,10 +81,10 @@ https://docs.python.org/3/tutorial/errors.html
             print(word)
         except NameError:
             print("No name, loser")
-
+```
 
 ## Defining functions
-
+```python
     def hello():
         print("Hello, world!")
 
@@ -93,18 +93,18 @@ https://docs.python.org/3/tutorial/errors.html
 
     def hello(name:str="Ross") -> str:
         print(f"Hello, {name}!")
-
+```
 ## Return values
-
+```python
     def hello(name:str = "Ross", age:int = 31) -> str:
         return f"Hello, my name is {name}. I am {age} years old!"
-
+```
 ## Importing packages
-
+```python
     import os
     inpath = os.path.join("..", "data")
     folder = os.listdir(inpath)
-
+```
 ### Task
 
 Create a function which does the following:
@@ -143,7 +143,7 @@ Task 3
   - return the dictionary to a variable
 
 ### Solution
-
+```python
     # just an example - notice use of type hints
     def parser(inpath:str) -> dict:
         """
@@ -168,10 +168,10 @@ Task 3
             else:
                 pass
         return dictionary
-
+```
 
 ## Classes
-
+```python
     class Person:
         species = "Homo sapiens"
         def __init__(self, name, age):
@@ -185,3 +185,4 @@ Task 3
             print(f"I am {self.age} year old member of the species {self.species}")
 
     p1.age = 40
+```

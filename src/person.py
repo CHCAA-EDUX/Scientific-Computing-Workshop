@@ -12,3 +12,4 @@ class Person:
 
 if __name__=="__main__":
     person1 = Person("Ross", 31)
+    person1.describe()

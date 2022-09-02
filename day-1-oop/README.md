@@ -6,4 +6,4 @@ And for no good reason, here is a neat little visualisation showing how scoping 
 
 Try it out in a notebook. What do you think it will print?
 
-![img](scope.png)
+![img](resources/scope.png)

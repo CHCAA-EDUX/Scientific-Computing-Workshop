@@ -11,11 +11,30 @@ This repository is in active development. Previous iterations of this workshop c
 
 This repository has the following directory structure:
 
-| Column | Description|
-|--------|:-----------|
-`day-1-oop`| All materials from day 1 covering basic Python object and object-oriented programming
-`day-2-scripting`| All materials from day 2 which builds on basic knowledge, introducing good scripting practice. Also features a short introduction to the ```pandas``` dataframe library and ```matplotlib``` for plotting.
-`day-3-numpy`| All materials from day 3 covering how to use ```numpy``` for advanced scientific computing.
+|                | Description                                     |
+| -------------- | :---------------------------------------------- |
+| `modules/`     | Contains all the teaching used in the workshop. |
+| `resources.md` | Contains additional resources for the workshop. |
+
+Within the `modules/` directory, there are the following subdirectories:
+
+| Module                      | Description                                        |
+| --------------------------- | :------------------------------------------------- |
+| `01_introduction_and_types` | Introduction to Python and data types.             |
+| `02_control_flow`           | Control flow and functions.                        |
+| `03_oop`                    | Object-oriented programming.                       |
+| `04_scripting`              | Introduction to scripting.                         |
+| `05_pandas_matplotlib`      | Introduction to data science tools in Python.      |
+| `06_debugging`              | Introduction to debbuging tools.                   |
+| `07_numpy`                  | Introduction to mathematical computing with numpy. |
+
+We will be going through the modules in order. However before that we will:
+1. Setup and introduce UCloud. However, feel free to install Python on your own computer if you prefer.
+2. Do a quick questionnarie to gauge your experience with Python.
+3. Introduce Jupyter Notebooks
+4. Get started with the first module
+
+The general teaching approach will be a quick introduction to a module and then a self-paced work through of the module. The modules are designed to be self-contained and can be completed at your own pace. If you have any questions, feel free to ask the instructors.
 
 ## Contributing
 

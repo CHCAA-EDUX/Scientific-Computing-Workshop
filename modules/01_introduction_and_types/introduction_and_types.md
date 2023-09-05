@@ -1,4 +1,4 @@
-# Intro day 1
+# Introduction
 
 ## Defining variables
 
@@ -346,7 +346,7 @@ And be aware of other gotchas!
     # remainder left over from floor division
     print(f"11/5 = {11//5} remainder {11%5})
 ```
-### Complex
+### Complex (Optional)
 
 The ```complex``` type may come in handy for advanced mathematical calulations. There are two ways to create objects with ```complex``` type:
 ```python

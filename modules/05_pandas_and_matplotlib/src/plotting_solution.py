@@ -1,8 +1,14 @@
-import os
+"""
+A sample solution which also contain additional features
+"""
+
 import argparse
-import pandas as pd
+import os
+
 import matplotlib.pyplot as plt
+import pandas as pd
 from scipy.stats import linregress
+
 
 def save_plot(inpath, outpath):
     # load data
@@ -19,22 +25,24 @@ def save_plot(inpath, outpath):
     fig, ax = plt.subplots()
     ax.scatter(x, y)
     # add regression line
-    ax.plot(x, m * x + b, color="red")   # I've added a color argument here
+    ax.plot(x, m * x + b, color="red")  # I've added a color argument here
     # Save figure
     fig.savefig(outpath)
 
     return None
 
+
 def load_args():
     # Create the parser
-    parser = argparse.ArgumentParser()# Add an argument
+    parser = argparse.ArgumentParser()  # Add an argument
     # input and output arguments
-    parser.add_argument('--inpath', "-i", type=str, required=True)
-    parser.add_argument('--outpath', "-o", type=str, required=True)
+    parser.add_argument("--inpath", "-i", type=str, required=True)
+    parser.add_argument("--outpath", "-o", type=str, required=True)
     # Parse the argument
     args = parser.parse_args()
 
     return args
+
 
 def main():
     # load args
@@ -45,8 +53,9 @@ def main():
     outpath = os.path.join(args.outpath)
     # save plot
     save_plot(inpath, outpath)
-    
+
     return None
+
 
 if __name__ == "__main__":
     main()

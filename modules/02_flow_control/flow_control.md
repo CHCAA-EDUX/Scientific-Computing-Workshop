@@ -259,7 +259,7 @@ Task 3
                 # print to display
                 print(f"Working on {idx} called {file}")
                 # update dictionary
-                dictonary[idx] = file
+                dictionary[idx] = file
             # if not csv, ignore
             else:
                 pass

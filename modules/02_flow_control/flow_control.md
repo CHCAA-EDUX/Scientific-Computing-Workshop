@@ -112,9 +112,33 @@ Create a function which does the following:
 Task 1
 
 - Take the list of user_data
+
+```python
+user_data = [
+    ["Ross", 31, 1.8],
+    ["Rachel", 29, 1.6],
+    ["Joey", 32, 1.9],
+    ["Phoebe", 30, 1.7],
+    ["Chandler", 33, 1.75],
+    ["Monica", 28, 1.65]
+]
+```
+
 - Go through each entry in the list
   - Add to dictionary
     - key = name : values = (age, height)
+
+The expected output should be:
+```python
+{
+    "Ross": (31, 1.8),
+    "Rachel": (29, 1.6),
+    "Joey": (32, 1.9),
+    "Phoebe": (30, 1.7),
+    "Chandler": (33, 1.75),
+    "Monica": (28, 1.65)
+}
+```
 
 Task 1.1
 
@@ -123,6 +147,22 @@ Task 1.1
 Task 2 
 
 - Take the list of bad_user_data
+
+```python
+bad_user_data = [
+    ["Ross", 31, 1.8],
+    ["Rachel", 29, 1.6],
+    ["Joey", 32, 1.9],
+    ["Phoebe", 30, 1.7],
+    ["Chandler", 33, 1.75],
+    ["Monica", 28, 1.65],
+    [1, 2, 3],
+    [30, 1.7],
+    ["Janice", 33, 1.75],
+    ["Richard", 28, 1.65]
+]
+```
+
 - Go through each entry in the list
   - If first entry is not string:
     - Raise an error and continue
@@ -132,7 +172,27 @@ Task 2
 
 Task 2.1
 
-- Create a function that will do this for any similar list
+- Create a function that will do this for any similar list e.g.:
+
+```
+bad_user_data = [
+    ["Jim",  32, 1.65],
+    ["Jimmy",  102, 1.55],
+    [202],
+]
+```
+
+What if you get a bad input like:
+
+```
+bad_user_data = [
+    ["Jim"],
+    ["Jimmy", 102, None],
+    ["John", "102", "1.55"],
+]
+```
+
+Can you write a function that will handle this? (optional)
 
 Task 3 
 - Go to the folder called "data"

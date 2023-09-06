@@ -2,6 +2,14 @@
 
 These are just some links which go into a bit more detail about the things we’ve been looking at the past few days, along with resources which address the most common questions.
 
+**I want to learn more python**:
+That is great. There is mulitple good resources out there:
+
+- Datacamp: https://www.datacamp.com/
+- I also recommend this course (Sadly the video are in Danish, but the rest of the material is English)
+  - https://cs.au.dk/~gerth/ipsa23/plan-full.html
+
+
 **UCloud official user guide and documentation**
 - *If you have problems setting something up or want to get more info, check the docs first.*
 [Link](https://docs.cloud.sdu.dk/)

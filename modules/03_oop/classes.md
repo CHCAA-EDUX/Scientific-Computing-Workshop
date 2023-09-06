@@ -108,3 +108,5 @@ table_obj1 = Table(names = ["kenneth", "anders", "scott"], ages = [28, 32, 5])
 table_obj2 = Table(names = ["john", "jane", "joe"], ages = [10, 20, 30])
 table_combined = table_obj1 + table_obj2
 ```
+
+

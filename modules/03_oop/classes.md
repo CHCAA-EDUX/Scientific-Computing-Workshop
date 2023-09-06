@@ -109,4 +109,23 @@ table_obj2 = Table(names = ["john", "jane", "joe"], ages = [10, 20, 30])
 table_combined = table_obj1 + table_obj2
 ```
 
+## Exercise 3 (optional):
 
+Create a class called `Party`, which takes in a list of `Person` object and can have them talk.
+Talk
+
+```python
+kenneth = Person("kenneth", 28)
+...
+party_obj = Party([kenneth, anders, scott])
+party_obj.talk("kenneth", "anders")
+```
+
+Which should print:
+
+```
+kenneth: Hello, my name is kenneth!
+anders: Hello, my name is anders!
+kenneth: I am a 28 year old member of the species homo sapiens
+anders: ...
+```

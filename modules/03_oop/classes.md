@@ -111,14 +111,14 @@ table_combined = table_obj1 + table_obj2
 
 ## Exercise 3 (optional):
 
-Create a class called `Party`, which takes in a list of `Person` object and can have them talk.
+Create a class called `Group`, which takes in a list of `Person` object and can have them talk.
 Talk
 
 ```python
 kenneth = Person("kenneth", 28)
 ...
-party_obj = Party([kenneth, anders, scott])
-party_obj.talk("kenneth", "anders")
+group = Group([kenneth, anders, scott])
+group.talk("kenneth", "anders")
 ```
 
 Which should print:
@@ -129,3 +129,80 @@ anders: Hello, my name is anders!
 kenneth: I am a 28 year old member of the species homo sapiens
 anders: ...
 ```
+
+
+## Subclasses (optional):
+Python classes also allow for subclasses. A class which inherits from another class.
+
+For instance we might want an object `Student` which is the same as Person, except that it also has a degree.
+
+```python
+class Student(Person):
+    def __init__(self, name, age, degree):
+        self.name = name
+        self.age = age
+        self.degree = degree
+```
+
+We can then run it using:
+
+```python
+kenneth = Student("kenenth", 28, "cogsci")
+kenneth.welcome() # we can call methods that already exists
+```
+Which will print:
+```
+Hello, my name is kenneth!
+```
+
+We can also test if this is a person using:
+```python
+is_it_a_person = isinstance(keneth, Person)
+print(is_it_a_person)
+# True
+```
+
+What happen if you run?
+```
+is_it_a_person = type(kenneth) == "Person"
+print(is_it_a_person)
+```
+
+Can you explain why that happens? 
+
+
+We it also overwrite existing methods such that we use the new degree instead of the old one.
+```python
+class Student(Person):
+    def __init__(self, name, age, degree):
+        self.name = name
+        self.age = age
+        self.degree = degree
+    
+
+    def describe(self):
+        print(f"I am a {self.age} year old member of the species {self.species} and I am studying {self.degree}")
+```
+
+## Exercise 4 Making friends (optional):
+
+Create a subclass of `Group` called `Party` in which each person becomes friends with each other after they talk.
+
+```python
+kenneth = Person("kenneth", 28)
+anders = Person("anders", 32)
+scott = Person("scott", 5)
+
+party = Party([kenneth, anders, scott])
+
+party.talk("kenneth", "anders")
+party.friends("kenneth")
+# ["anders"]
+
+party.talk("kenneth", "scott")
+party.friends("kenneth")
+# ["anders", "scott"]
+```
+
+
+

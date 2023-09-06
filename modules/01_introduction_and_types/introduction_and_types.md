@@ -153,7 +153,7 @@ One final, extremely useful thing related to strings is the ```f-string``` or fo
 ```python
     # define name variable
     name = "Ross"
-    print(f"My name is  {Ross}")
+    print(f"My name is  {name}")
 
     # expressions in f-strings
     print(f"The sum 2+3 is equal to {2+3}")

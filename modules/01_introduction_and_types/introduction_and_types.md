@@ -167,14 +167,21 @@ These can be useful when used alongside other string processing methods, especia
     print(outfile)
 
     # More concise; less readable?
-    outfile_concise = f"{infile.split(".")[0]}.processed_data.csv"
-    outfile == outfile_concise
-```
-Remember quotation marks!
-```python
     outfile_concise = f"{infile.split('.')[0]}.processed_data.csv"
     outfile == outfile_concise
 ```
+
+### Exercise: Remember quotation marks!
+
+Try running the following:
+
+```python
+outfile_concise = f"{infile.split(".")[0]}.processed_data.csv"
+outfile == outfile_concise
+```
+
+You will note that it does not run. Can you explain why?
+
 ## Sequence types
 
 Sequence types are some of the most useful of Python's fundamental data types. If you write a Python program without some kind of sequence type, you're probably doing it wrong.
@@ -241,6 +248,9 @@ Lists are incredibly simple but powerful data structures. Use them wisely!
 ### Exercise
 
 Find fifth word in a sentence. (Str->List, index list)
+
+**Example**:
+For instance the sentence "hello my name is kenneth" -> ["hello", "my", "name", "is", "kenneth"] -> "kenneth"
 
 ### Tuples
 

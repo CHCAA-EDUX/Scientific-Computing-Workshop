@@ -11,6 +11,9 @@ Note that if you're coming from an ```R``` background, some of this might seem a
         print(colour)
 ```
 ### Increment decrement
+
+In python we can use ```+=``` and ```-=``` to increment and decrement variables. This is useful if we want to count how many times we have gone through a loop.
+
 ```python
     # create variable
     i = 0
@@ -33,6 +36,7 @@ This can be made much more concise by using list comprehensions:
     shouty_colours = [colour.upper() for colour in colours]
 ```
 ### Enumerate()
+
 ```python
     for idx,i in enumerate(range(0,10)):
         print(f"Index:{idx}, Value:{i}")
@@ -52,6 +56,9 @@ This can be made much more concise by using list comprehensions:
             break
 ```
 ### if, elif, else
+
+In python we use ```if``` statements to check if a condition is true. If it is, we do something. If it isn't, we do something else. We can also use ```elif``` and ```else``` to do something else if the first condition is not met.
+
 ```python
     for i in range(0,20):
         if i % 2 == 0:
@@ -68,6 +75,8 @@ This can be made much more concise by using list comprehensions:
             print("whatever")
 ```
 ## Exception handling
+We can use exception handling to catch errors and do something with them. This is useful if you are working with a large dataset and you want to skip over any errors and continue with the rest of the data.
+
 https://docs.python.org/3/tutorial/errors.html
 ```python
     for colour in colours:
@@ -84,6 +93,10 @@ https://docs.python.org/3/tutorial/errors.html
 ```
 
 ## Defining functions
+
+A function is a block of code that only runs when it is called. You can pass data, known as parameters, into a function. A function can return data as a result.
+
+
 ```python
     def hello():
         print("Hello, world!")
@@ -95,10 +108,33 @@ https://docs.python.org/3/tutorial/errors.html
         print(f"Hello, {name}!")
 ```
 ## Return values
+We can add return values using the following syntax:
+
 ```python
-    def hello(name:str = "Ross", age:int = 31) -> str:
+    def hello(name = "Ross", age= 31):
         return f"Hello, my name is {name}. I am {age} years old!"
 ```
+
+## Type hints:
+We can also provide type hints to make our code more readable. This is especially useful if you are working in a team and you want to make sure that everyone knows what type of data is being passed around.
+
+```python
+    def hello(name: str = "Ross", age: int = 31) -> str:
+        return f"Hello, my name is {name}. I am {age} years old!"
+```
+Here the type hints state that `name` is a string, `age` is an integer and the function returns a string.
+
+## Docstrings
+Furthermore we can add a docstring to the function, that describes what the function does:
+
+```python
+def hello(name: str = "Ross", age: int = 31) -> str:
+    """
+    This function takes a name and an age and returns a string
+    """
+    return f"Hello, my name is {name}. I am {age} years old!"
+```
+
 ## Importing packages
 ```python
     import os

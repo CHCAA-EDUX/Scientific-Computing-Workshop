@@ -25,7 +25,7 @@ We can use the class in the following way:
 ```python
 kenneth = Person("kenneth", 28)  # calls the __init__ function
 kenneth.welcome() 
-kenneth.decribe()
+kenneth.describe()
 ```
 Which should output:
 

@@ -354,7 +354,7 @@ And be aware of other gotchas!
     # floor division - always integer
     10//5 == 2
     # remainder left over from floor division
-    print(f"11/5 = {11//5} remainder {11%5})
+    print(f"11/5 = {11//5} remainder {11%5}")
 ```
 ### Complex (Optional)
 

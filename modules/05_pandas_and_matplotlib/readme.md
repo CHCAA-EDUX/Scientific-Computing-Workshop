@@ -130,7 +130,7 @@ $$
 BMI = \frac{weight}{height^2}
 $$
 
-Then calculate the mean BMI according to `lives_in_city`.
+Where height is in meters and weight is in kilograms. Then calculate the mean BMI according to `lives_in_city`.
 
 ## Plotting with Matplotlib
 

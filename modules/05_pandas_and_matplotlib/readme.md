@@ -98,10 +98,17 @@ df["age"].max() # get the maximum age
 df["age"].min() # get the minimum age
 ```
 
+### Slicing the dataframe
+You can select specific columns using:
+```python
+df2 = df[["height", "age"]]
+df2
+```
+
 ### Grouping data
 To group data we can use the following syntax:
 ```python
-df.groupby("age").mean() # group by age and get the mean of each group
+df2.groupby("age").mean() # group by age and get the mean of each group
 ```
 
 In our case that is a bit boring, but if we had a column with a lot of different values it would be more interesting.

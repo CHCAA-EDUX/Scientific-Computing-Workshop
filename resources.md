@@ -8,7 +8,8 @@ That is great. There is mulitple good resources out there:
 - Datacamp: https://www.datacamp.com/
 - I also recommend this course (Sadly the video are in Danish, but the rest of the material is English)
   - https://cs.au.dk/~gerth/ipsa23/plan-full.html
-
+- A lot of this workshop is also modelled after the software carpentry courses. You can see the full list of lessons here:
+  - https://software-carpentry.org/lessons/
 
 **UCloud official user guide and documentation**
 - *If you have problems setting something up or want to get more info, check the docs first.*
@@ -42,3 +43,4 @@ That is great. There is mulitple good resources out there:
 **What does if __name__ == "__main__" actually do? Why do we need it?**
 - *A really nice discussion of this on StackOverflow; the top answer is one of the best explanations I’ve come across*
 [Link](https://stackoverflow.com/questions/419163/what-does-if-name-main-do)
+

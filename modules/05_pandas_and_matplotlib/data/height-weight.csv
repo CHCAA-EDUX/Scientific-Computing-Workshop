@@ -1,4 +1,4 @@
-weight_in_kg,height_in_cm,lives_in_city
+weight_in_pounds,height_in_inches,lives_in_city
 73.847017017515,241.893563180437,False
 68.7819040458903,162.3104725213,False
 74.1101053917849,212.7408555565,True

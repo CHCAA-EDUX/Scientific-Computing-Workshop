@@ -124,7 +124,13 @@ modules/05_pandas_and_matplotlib/data/height-weight.csv
 ```
 
 - After you have read in the file calculate the mean height and weight according to `lives_in_city`
-- Add the column `bmi` to the DataFrame. The BMI is calculated as `weight / (height / 100) ** 2`. Then calculate the mean BMI according to `lives_in_city`.
+- Add the column `bmi` to the DataFrame. The BMI is calculated as:
+
+$$
+BMI = \frac{weight}{height^2}
+$$
+
+Then calculate the mean BMI according to `lives_in_city`.
 
 ## Plotting with Matplotlib
 

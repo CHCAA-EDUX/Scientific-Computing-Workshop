@@ -138,6 +138,16 @@ if __name__ == "__main__":
     main()
 ```
 
+Which you can then call using:
+```
+$ python hello.py --name Harry
+```
+Which then prints
+```
+Hello Harry!
+```
+
+
 ### Conceptual 1:
 - Write a docstring for the `parse_args` function and add a type hint for the return value.
 - Explain what the `if __name__ == "__main__":` does. Try running it in the debugging.

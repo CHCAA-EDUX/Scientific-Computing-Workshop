@@ -1,4 +1,6 @@
 
+This module is **optional**
+
 This modules just follows:
 
 https://swcarpentry.github.io/git-novice/07-github.html
